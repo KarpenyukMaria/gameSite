@@ -1,0 +1,615 @@
+<!DOCTYPE html><html lang="en"><head><title>Game</title><style>body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #121212;
+}
+
+.header {
+  background: #121212;
+  height: 64px;
+  color: #F7F5F9;
+  display: flex;
+  flex-wrap: nowrap;
+  font-style: normal;
+  font-family: "Made Outer Sans Alt Black PERSONAL USE", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.header_MENU1 {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 635px;
+  height: 100%;
+  vertical-align: middle;
+}
+.header_MENU1-logo {
+  width: 260px;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 15px 30px 15px 30px;
+}
+.header_MENU1-logo img {
+  width: 100%;
+  object-fit: contain;
+}
+.header_MENU1-location {
+  width: 140px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.header_MENU1-location-1 {
+  width: 18px;
+  height: 21px;
+  margin-right: 10px;
+}
+.header_MENU1-location-1 img {
+  width: 100%;
+  object-fit: contain;
+}
+.header_MENU1-location-2 {
+  width: 56px;
+  height: 18px;
+  margin-right: 8px;
+}
+.header_MENU1-location-3 {
+  width: 10px;
+  height: 10px;
+  margin-bottom: 13px;
+}
+.header_MENU1-location-3 img {
+  width: 100%;
+  object-fit: contain;
+}
+.header_MENU1-number {
+  width: 230px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 23px;
+}
+.header_MENU1-number-1 {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+.header_MENU1-number-1 img {
+  width: 100%;
+  object-fit: contain;
+}
+.header_MENU1-number-2 {
+  width: 151px;
+  height: 18px;
+}
+.header_MENU1-number-2 p {
+  margin-top: 0;
+  text-align: center;
+}
+.header_MENU2 {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+  vertical-align: middle;
+  margin-left: 80px;
+}
+.header_MENU2-Schedule {
+  width: 135px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 23px 30px 23px 30px;
+  text-align: center;
+}
+.header_MENU2-Rooms {
+  width: 116px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 23px 30px 23px 30px;
+  text-align: center;
+}
+.header_MENU2-Contacts {
+  width: 135px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 23px 30px 23px 30px;
+  text-align: center;
+}
+.header_MENU2-Language {
+  width: 144px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.header_MENU2-Language_UK {
+  width: 45px;
+  height: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+}
+.header_MENU2-Language_UK img {
+  width: 22px;
+  object-fit: contain;
+  margin-top: 7px;
+}
+.header_MENU2-Language_Ger {
+  width: 45px;
+  height: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+}
+.header_MENU2-Language_Ger img {
+  margin-top: 7px;
+  width: 22px;
+  object-fit: contain;
+}
+.header_MENU2-btnMore {
+  width: 135px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_MENU2-btnMore img {
+  width: 60px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.section-banner {
+  position: relative;
+  width: 100%;
+  height: 935px;
+  background-image: url("src/images/section-banner.png");
+  background-size: cover;
+  color: #F7F5F9;
+  font-style: normal;
+  font-family: "Made Outer Sans Alt Black PERSONAL USE", sans-serif;
+}
+.section-banner-text1 {
+  position: absolute;
+  top: 236px;
+  left: 126px;
+  width: 719px;
+  height: 255px;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 85px;
+}
+.section-banner-text2 {
+  position: absolute;
+  left: 126px;
+  top: 540px;
+  height: 34px;
+  width: 545px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 34px;
+}
+.section-banner__btn {
+  position: absolute;
+  top: 640px;
+  left: 88px;
+  width: 202px;
+  height: 60px;
+  background: #E50012;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  padding-top: 20px;
+}
+.section-banner-logo {
+  position: absolute;
+  width: 221px;
+  height: 221px;
+  right: 115px;
+  top: 550px;
+  border: 1px solid #32D99C;
+  background: rgba(50, 217, 156, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-rooms {
+  position: relative;
+  width: 100%;
+  height: 1036px;
+  background-color: #121212;
+  font-family: "Made Outer Sans Alt Black PERSONAL USE", sans-serif;
+  color: #F7F5F9;
+}
+.section-rooms p {
+  padding-top: 64px;
+  padding-left: 121px;
+  margin: 0;
+  padding-bottom: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 45px;
+}
+.section-rooms-container {
+  height: 865px;
+  margin: 0 121px 107px 121px;
+}
+
+.swiper {
+  overflow: hidden;
+  width: 100%;
+  font-family: "Made Outer Sans Alt Black PERSONAL USE", sans-serif;
+  color: #F7F5F9;
+}
+.swiper-slide {
+  min-height: 865px;
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgba(255, 255, 255, 0.05);
+}
+.swiper-slide-img {
+  height: 492px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+}
+.swiper-slide-img-header {
+  position: absolute;
+  bottom: 370px;
+  left: 30px;
+  font-weight: 700;
+  font-size: 34px;
+}
+.swiper-slide-infoRoom {
+  height: 373px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 400;
+}
+.swiper-slide-infoRoom-1 {
+  width: 350px;
+  height: 38px;
+  margin-top: 10px;
+  margin-left: 50px;
+  font-size: 14px;
+}
+.swiper-slide-infoRoom-1__time {
+  position: relative;
+  display: inline-block;
+  width: 73px;
+  height: 24px;
+  margin-top: 14px;
+  margin-right: 18px;
+  padding-left: 22px;
+}
+.swiper-slide-infoRoom-1__time::before {
+  content: "";
+  display: block;
+  width: 1.1rem;
+  height: 1.1rem;
+  background-image: url("/src/images/room_icons/clock.png");
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 0.8rem);
+}
+.swiper-slide-infoRoom-1__level {
+  position: relative;
+  display: inline-block;
+  width: 84px;
+  height: 24px;
+  margin-top: 14px;
+  margin-right: 18px;
+  padding-left: 25px;
+}
+.swiper-slide-infoRoom-1__level::before {
+  content: "";
+  display: block;
+  width: 1.3rem;
+  height: 1.2rem;
+  background-image: url("/src/images/room_icons/level.png");
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 0.8rem);
+}
+.swiper-slide-infoRoom-1__people {
+  position: relative;
+  display: inline-block;
+  width: 51px;
+  height: 24px;
+  margin-top: 14px;
+  margin-right: 18px;
+  padding-left: 22px;
+}
+.swiper-slide-infoRoom-1__people::before {
+  content: "";
+  display: block;
+  width: 0.9rem;
+  height: 1.2rem;
+  background-image: url("/src/images/room_icons/people.png");
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 0.8rem);
+}
+.swiper-slide-infoRoom-2 {
+  width: 250px;
+  height: 200px;
+  margin-top: 24px;
+  font-size: 18px;
+}
+.swiper-slide button {
+  margin-top: 24px;
+  height: 50px;
+  width: 267px;
+  background: rgba(255, 255, 255, 0.05);
+  font-weight: 700;
+  font-size: 20px;
+  color: #F7F5F9;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.swiper-button-next::after {
+  color: white;
+}
+
+.swiper-button-prev::after {
+  color: white;
+}
+
+.footer {
+  height: 1200px;
+  background-color: black;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  font-family: "Made Outer Sans Alt Black PERSONAL USE", sans-serif;
+}
+.footer-infoBlock1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  vertical-align: middle;
+}
+.footer-infoBlock1_part1 {
+  margin-left: auto;
+  width: 234px;
+  height: 37px;
+  background-image: url("../src/images/Horizontal logo.png");
+  background-size: cover;
+  margin-top: 150px;
+}
+.footer-infoBlock1_part2 {
+  margin-left: auto;
+  width: 234px;
+  height: 96px;
+  text-align: right;
+  margin-top: 35px;
+}
+.footer-infoBlock1_part3 {
+  margin-top: 130px;
+  position: absolute;
+  width: 427.02px;
+  height: 24px;
+  display: flex;
+  flex-wrap: nowrap;
+  left: 120px;
+}
+.footer-infoBlock1_part3-1 {
+  width: 41.09px;
+  height: 14px;
+  margin-right: 25px;
+}
+.footer-infoBlock1_part3-1 img {
+  width: 100%;
+  object-fit: contain;
+}
+.footer-infoBlock1_part3-2 {
+  height: 14.6px;
+  width: 21.9px;
+  margin-right: 25px;
+}
+.footer-infoBlock1_part3-2 img {
+  width: 100%;
+  object-fit: contain;
+}
+.footer-infoBlock1_part3-3 {
+  width: 47px;
+  height: 20px;
+  margin-right: 25px;
+}
+.footer-infoBlock1_part3-3 img {
+  width: 100%;
+  object-fit: contain;
+}
+.footer-infoBlock1_part3-4 {
+  width: 51.09px;
+  height: 15.1px;
+  margin-right: 25px;
+}
+.footer-infoBlock1_part3-4 img {
+  width: 100%;
+  object-fit: contain;
+}
+.footer-infoBlock1_part3-5 {
+  width: 70px;
+  height: 20px;
+  margin-right: 25px;
+}
+.footer-infoBlock1_part3-5 img {
+  width: 100%;
+  object-fit: contain;
+}
+.footer-infoBlock1_part4 {
+  margin-left: auto;
+  text-align: right;
+  width: 234px;
+  height: 24px;
+  margin-top: 465px;
+}
+.footer-infoBlock2 {
+  position: relative;
+  display: inline-block;
+  width: 60%;
+  height: 100%;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 500;
+}
+.footer-infoBlock2-INFO {
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.footer-infoBlock2-INFO li {
+  padding-bottom: 24px;
+  list-style-type: none;
+}
+.footer-infoBlock2-INFO-part1 {
+  height: 164px;
+  width: 150px;
+  margin-right: 80px;
+}
+.footer-infoBlock2-INFO-part2 {
+  height: 160.29296875px;
+  width: 167px;
+  margin-right: 80px;
+}
+.footer-infoBlock2-INFO-part3 {
+  height: 117px;
+  width: 150px;
+}
+.footer-infoBlock2-addInfo {
+  width: 250px;
+  height: 24px;
+  margin-top: 465px;
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+  font-weight: 300;
+  font-size: 14px;
+}
+.footer-infoBlock2-addInfo_1 {
+  width: 110px;
+  margin-right: 13px;
+}
+.footer-infoBlock2-addInfo_2 {
+  width: 110px;
+}
+.footer-infoBlock2-circle {
+  background: radial-gradient(100% 49.93% at 0% 50%, #C4C4C4 0%, rgba(199, 150, 82, 0.33) 0.01%, rgba(0, 0, 0, 0) 100%);
+  mix-blend-mode: lighten;
+  transform: rotate(-90deg);
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 37%;
+  left: 15%;
+}
+.footer-infoBlock3 {
+  position: relative;
+  display: inline-block;
+  width: 19%;
+  height: 100%;
+  vertical-align: middle;
+  font-size: 16px;
+}
+.footer-infoBlock3_part1 {
+  height: 60px;
+  width: 60px;
+  margin-top: 150px;
+  margin-left: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+.footer-infoBlock3_part1 img {
+  width: 40%;
+  object-fit: scale-down;
+}
+.footer-infoBlock3_part2 {
+  margin-left: 170px;
+  margin-top: 90px;
+}
+.footer-infoBlock3_part2-DE {
+  color: rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  margin-right: 10px;
+}
+.footer-infoBlock3_part2-EN {
+  display: inline-block;
+}
+.footer-infoBlock3_part3 {
+  position: absolute;
+  width: 272px;
+  height: 24px;
+  display: flex;
+  flex-wrap: nowrap;
+  right: 127px;
+  top: 800px;
+}
+.footer-infoBlock3_part3-smm1 {
+  width: 10px;
+  height: 20px;
+  margin-right: 42px;
+}
+.footer-infoBlock3_part3-smm1 img {
+  width: 100%;
+  object-fit: contain;
+}
+.footer-infoBlock3_part3-smm2 {
+  width: 20px;
+  height: 20px;
+  margin-right: 42px;
+}
+.footer-infoBlock3_part3-smm2 img {
+  width: 100%;
+  object-fit: contain;
+}
+.footer-infoBlock3_part3-smm3 {
+  width: 20px;
+  height: 20px;
+  margin-right: 42px;
+}
+.footer-infoBlock3_part3-smm3 img {
+  width: 100%;
+  object-fit: contain;
+}
+.footer-infoBlock3_part3-smm4 {
+  width: 20px;
+  height: 14px;
+  margin-right: 42px;
+}
+.footer-infoBlock3_part3-smm4 img {
+  width: 100%;
+  object-fit: contain;
+}
+.footer-infoBlock3_part3-smm5 {
+  width: 19px;
+  height: 18px;
+  margin-right: 42px;
+}
+.footer-infoBlock3_part3-smm5 img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=style.css.map */
+</style><link rel="stylesheet" href="src/swiper/swiper-bundle.min.css"><script src="src/swiper/swiper-bundle.min.js"></script></head><body><header><div class="header"><div class="header_MENU1"><div class="header_MENU1-logo"><img src="../src/images/Horizontal logo.png" alt="logo"></div><div class="header_MENU1-location"><div class="header_MENU1-location-1"><img src="../src/images/location.png" alt="location"></div><div class="header_MENU1-location-2">Vienna</div><div class="header_MENU1-location-3"><img src="../src/images/arrow.png" alt="arrow"></div></div><div class="header_MENU1-number"><div class="header_MENU1-number-1"><img src="../src/images/phone.png" alt="phone"></div><div class="header_MENU1-number-2"><p>+43 660 605 0000</p></div></div></div><div class="header_MENU2"><div class="header_MENU2-Schedule">Schedule</div><div class="header_MENU2-Rooms">Rooms</div><div class="header_MENU2-Contacts">Contacts</div><div class="header_MENU2-Language"><div class="header_MENU2-Language_UK"><img src="../src/images/united-kingdom 1.png" alt="UK"></div><div class="header_MENU2-Language_Ger"><img src="../src/images/germany.png" alt="germany"></div></div><div class="header_MENU2-btnMore"><img src="../src/images/Burger.png" alt="burger"></div></div></div></header><section class="section-banner"><div class="container"><h1 class="section-banner-text1"> #1 Escape<br>rooms in<br>Vienna</h1><p class="section-banner-text2">64,232 players have chosen us worldwide</p><div class="section-banner__btn">Book now</div><!--.section-banner__cloud--><div class="section-banner-logo"><img src="src/images/section-logo-in.png" alt="section-logo"></div></div></section><section class="section-rooms"><p>Our games</p><div class="section-rooms-container"><div class="swiper MySwiper"><div class="swiper-wrapper"><div class="swiper-slide"><img class="swiper-slide-img" src="../src/images/room1.png" alt="room1"><h3 class="swiper-slide-img-header">Mission Belvedere</h3><div class="swiper-slide-infoRoom"><div class="swiper-slide-infoRoom-1"><div class="swiper-slide-infoRoom-1__time">60 min</div><div class="swiper-slide-infoRoom-1__level">Difficult</div><div class="swiper-slide-infoRoom-1__people">2-4</div></div><div class="swiper-slide-infoRoom-2">Nehmt an dem Raub des Jahrhunderts teil! Macht mit und versucht, Gustav Klimts "Der Kuss" aus Österreichs sicherstem Museum zu stehlen.</div><button>Select game</button></div></div><div class="swiper-slide"><img class="swiper-slide-img" src="../src/images/room2.png" alt="room2"><h3 class="swiper-slide-img-header">School of Magic</h3><div class="swiper-slide-infoRoom"><div class="swiper-slide-infoRoom-1"><div class="swiper-slide-infoRoom-1__time">80 min</div><div class="swiper-slide-infoRoom-1__level">Difficult</div><div class="swiper-slide-infoRoom-1__people">2-7</div></div><div class="swiper-slide-infoRoom-2">Nehmt an dem Raub des Jahrhunderts teil! Macht mit und versucht, Gustav Klimts "Der Kuss" aus Österreichs sicherstem Museum zu stehlen.</div><button>Select game</button></div></div><div class="swiper-slide"><img class="swiper-slide-img" src="../src/images/room3.png" alt="room3"><h3 class="swiper-slide-img-header">The Unknown</h3><div class="swiper-slide-infoRoom"><div class="swiper-slide-infoRoom-1"><div class="swiper-slide-infoRoom-1__time">20 min</div><div class="swiper-slide-infoRoom-1__level">Difficult</div><div class="swiper-slide-infoRoom-1__people">2-5</div></div><div class="swiper-slide-infoRoom-2">Nehmt an dem Raub des Jahrhunderts teil! Macht mit und versucht, Gustav Klimts "Der Kuss" aus Österreichs sicherstem Museum zu stehlen.</div><button>Select game</button></div></div><div class="swiper-slide"><img class="swiper-slide-img" src="../src/images/room4.png" alt="room4"><h3 class="swiper-slide-img-header">School of Magic</h3><div class="swiper-slide-infoRoom"><div class="swiper-slide-infoRoom-1"><div class="swiper-slide-infoRoom-1__time">50 min</div><div class="swiper-slide-infoRoom-1__level">Easy</div><div class="swiper-slide-infoRoom-1__people">2-3</div></div><div class="swiper-slide-infoRoom-2">Nehmt an dem Raub des Jahrhunderts teil! Macht mit und versucht, Gustav Klimts "Der Kuss" aus Österreichs sicherstem Museum zu stehlen.</div><button>Select game</button></div></div><div class="swiper-slide"><img class="swiper-slide-img" src="../src/images/room1.png" alt="room1"><h3 class="swiper-slide-img-header">Mission Belvedere</h3><div class="swiper-slide-infoRoom"><div class="swiper-slide-infoRoom-1"><div class="swiper-slide-infoRoom-1__time">60 min</div><div class="swiper-slide-infoRoom-1__level">Difficult</div><div class="swiper-slide-infoRoom-1__people">2-4</div></div><div class="swiper-slide-infoRoom-2">Nehmt an dem Raub des Jahrhunderts teil! Macht mit und versucht, Gustav Klimts "Der Kuss" aus Österreichs sicherstem Museum zu stehlen.</div><button>Select game</button></div></div><div class="swiper-slide"><img class="swiper-slide-img" src="../src/images/room3.png" alt="room3"><h3 class="swiper-slide-img-header">The Unknown</h3><div class="swiper-slide-infoRoom"><div class="swiper-slide-infoRoom-1"><div class="swiper-slide-infoRoom-1__time">20 min</div><div class="swiper-slide-infoRoom-1__level">Difficult</div><div class="swiper-slide-infoRoom-1__people">2-5</div></div><div class="swiper-slide-infoRoom-2">Nehmt an dem Raub des Jahrhunderts teil! Macht mit und versucht, Gustav Klimts "Der Kuss" aus Österreichs sicherstem Museum zu stehlen.</div><button>Select game</button></div></div><div class="swiper-slide"><img class="swiper-slide-img" src="../src/images/room2.png" alt="room2"><h3 class="swiper-slide-img-header">School of Magic</h3><div class="swiper-slide-infoRoom"><div class="swiper-slide-infoRoom-1"><div class="swiper-slide-infoRoom-1__time">80 min</div><div class="swiper-slide-infoRoom-1__level">Difficult</div><div class="swiper-slide-infoRoom-1__people">2-7</div></div><div class="swiper-slide-infoRoom-2">Nehmt an dem Raub des Jahrhunderts teil! Macht mit und versucht, Gustav Klimts "Der Kuss" aus Österreichs sicherstem Museum zu stehlen.</div><button>Select game</button></div></div></div></div><div class="swiper-button-next"></div><div class="swiper-button-prev"></div><div class="swiper-pagination"></div></div></section><footer><div class="footer"><div class="footer-infoBlock1"><div class="footer-infoBlock1_part1"></div><div class="footer-infoBlock1_part2"><p>Impressum Elite Experience EC Gmbh,FN 491623a, Pirchäckerstrasse 34, 8053 Graz</p></div><div class="footer-infoBlock1_part3">We accept:<div class="footer-infoBlock1_part3-1"><img src="../src/images/footer/visa.png" alt="visa"></div><div class="footer-infoBlock1_part3-2"><img src="../src/images/footer/circle2.png" alt="circle2"></div><div class="footer-infoBlock1_part3-3"><img src="../src/images/footer/pay.png" alt="pay"></div><div class="footer-infoBlock1_part3-4"><img src="../src/images/footer/worlds.png" alt="worlds"></div><div class="footer-infoBlock1_part3-5"><img src="../src/images/footer/PayPal.png" alt="PayPal"></div></div><div class="footer-infoBlock1_part4"><p>Ⓒ2020 NoWayOut All Rights Reserved</p></div></div><div class="footer-infoBlock2"><div class="footer-infoBlock2-circle"></div><div class="footer-infoBlock2-INFO"><div class="footer-infoBlock2-INFO-part1"><ul><li>Rooms</li><li>Gift card</li><li>How to play</li><li>Blog</li></ul></div><div class="footer-infoBlock2-INFO-part2"><ul><li>Corporate</li><li>Birthday parties</li><li>Special offer</li><li>Bandle</li></ul></div><div class="footer-infoBlock2-INFO-part3"><ul><li>Contact us</li><li>About us</li><li>Career</li></ul></div></div><div class="footer-infoBlock2-addInfo"><div class="footer-infoBlock2-addInfo_1">Privacy Policy</div><div class="footer-infoBlock2-addInfo_2">Terms Of Use</div></div></div><div class="footer-infoBlock3"><div class="footer-infoBlock3_part1"><img src="../src/images/footer/arrow.png" alt="arrow"></div><div class="footer-infoBlock3_part2"><div class="footer-infoBlock3_part2-DE">DE</div><div class="footer-infoBlock3_part2-EN">EN</div></div><div class="footer-infoBlock3_part3"><div class="footer-infoBlock3_part3-smm1"><img src="../src/images/footer/smmBlock/smm1.png" alt="smm1"></div><div class="footer-infoBlock3_part3-smm2"><img src="../src/images/footer/smmBlock/smm2.png" alt="smm2"></div><div class="footer-infoBlock3_part3-smm3"><img src="../src/images/footer/smmBlock/smm3.png" alt="smm3"></div><div class="footer-infoBlock3_part3-smm4"><img src="../src/images/footer/smmBlock/smm4.png" alt="smm4"></div><div class="footer-infoBlock3_part3-smm5"><img src="../src/images/footer/smmBlock/smm5.png" alt="smm5"></div></div></div></div></footer><script src="logic.js"></script><script src="src/swiper/swiper-bundle.min.js"></script></body></html>
